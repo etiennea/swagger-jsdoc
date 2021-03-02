@@ -227,7 +227,7 @@ export async function extract(options) {
     if (jsdocAnnotations.length) {
       for (const annotation of jsdocAnnotations) {
         const jsDocComment = doctrine.parse(annotation, { unwrap: true });
-        for (const doc of extractYamlFromJsDoc(jsDocComment)) {
+        for (const doc of extractYamlFromJsDoc(jsDocComment, options)) {
           const parsed = YAML.parseDocument(doc);
 
           const anchors = parsed.anchors.getNames();
