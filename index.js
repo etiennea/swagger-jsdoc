@@ -8,6 +8,7 @@ import { validateOptions } from './src/utils.js';
  * @param {string} options.format Optional, defaults to '.json' - target file format '.yml' or '.yaml'.
  * @param {object} options.swaggerDefinition
  * @param {object} options.definition
+ * @param {array} options.mustIncludeTag Optional, allows to have a private and public API for example
  * @param {array} options.apis
  * @returns {object|string} Output specification as json or yaml
  */
